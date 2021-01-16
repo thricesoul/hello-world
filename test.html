@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function myFunction()
+{
+	var num1 = parseFloat(document.getElementById("num1").value);
+	var num2 = parseFloat(document.getElementById("num2").value);
+	var num3 = parseFloat(document.getElementById("num3").value);
+	document.getElementById("output").innerHTML =((num1*1.1)+num2)/3.6+(36*num3);
+}
+</script>
+Price: <input type = "text" id="num1">
+<p></p>
+TW_Shipping: <input type = "text" id="num2">
+<p></p>
+Guess_Weight: <input type = "text" id="num3">
+<p></p>
+Output  <button onclick="myFunction()">=</button>
+<p id = "output"></p>
+</body>
+</html>
